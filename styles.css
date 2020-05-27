@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: lightgray;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    height: 10vh;
+
+}
+
+.logos {
+    flex: 1;
+}
+
+.nav-bar{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 18px;
+    color: darkgray
+}
+
+nav {
+    flex: 3;
+}
