@@ -9,7 +9,6 @@ body {
 }
 
 header {
-    background: lightgray;
     display: flex;
     width: 90%;
     margin: auto;
@@ -28,9 +27,42 @@ header {
     justify-content: space-around;
     list-style: none;
     font-size: 18px;
-    color: darkgray
 }
 
+.myLinks {
+    text-decoration: none;
+}
 nav {
     flex: 3;
+}
+
+.socials {
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+}
+
+.presentation {
+    display:flex;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+    margin: auto;
+}
+
+.intro h1 {
+    font-size: 44px;
+    font-weight: 300;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro p {
+    margin-top: 5px;
+    font-weight: 200;
+    font-size: 18px;
+    color: #585772;
 }
