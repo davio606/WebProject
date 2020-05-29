@@ -45,6 +45,7 @@ nav {
 .presentation {
     display:flex;
     align-items: center;
+    min-height: 70vh;
 }
 
 .intro {
@@ -53,7 +54,7 @@ nav {
 }
 
 .intro h1 {
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 300;
     background: linear-gradient(to right, #494964, #6f6f89);
     -webkit-background-clip: text;
@@ -65,4 +66,61 @@ nav {
     font-weight: 200;
     font-size: 18px;
     color: #585772;
+}
+
+.circle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+    width: 40%;
+    opacity: 0.6;
+}
+
+.circle-here{
+    border:2px solid lightblue;
+    border-radius:50%;
+    background:rgba(0,0,0,0);
+    background-color: lightblue;
+    width:500px;
+    height:500px;
+    text-align:center;
+    line-height:100px;
+    top:-100px;
+    right:-100px;
+    position: absolute;
+}
+
+.circle-orange{
+    border:2px solid lightcoral;
+    border-radius:50%;
+    background:rgba(0,0,0,0);
+    background-color: lightcoral;
+    color:solid lightcoral;
+    width:500px;
+    height:500px;
+    text-align:center;
+    line-height:100px;
+    top:-300px;
+    right:1200px;
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.circle-gray{
+    border:2px solid lightgray;
+    border-radius:50%;
+    background:rgba(0,0,0,0);
+    color:white;
+    background-color: lightgray;
+    width:600px;
+    height:600px;
+    text-align:center;
+    line-height:100px;
+    top: 550px;
+    right:750px;
+    position: absolute;
+    opacity: 0.6;
+    z-index: -1;
 }
