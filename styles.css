@@ -14,7 +14,6 @@ header {
     margin: auto;
     align-items: center;
     height: 10vh;
-
 }
 
 .logos {
@@ -33,7 +32,7 @@ header {
     text-decoration: none;
 }
 nav {
-    flex: 3;
+    flex: 0.2;
 }
 
 .socials {
@@ -48,18 +47,70 @@ nav {
     min-height: 70vh;
 }
 
-.intro {
-    text-align: center;
-    margin: auto;
+.about-presentation {
+    display:flex;
+    align-items: center;
+    min-height: 30vh;
 }
 
-.intro h1 {
+.about-intro {
+    text-align: center;
+    flex: 2;
+}
+
+.about-img {
+    text-align: center;
+    flex:1;
+}
+
+.about-intro h1 {
     font-size: 40px;
     font-weight: 300;
     background: linear-gradient(to right, #494964, #6f6f89);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.about-intro p {
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+    color: #dbdae4;
+}
+.intro {
+    text-align: center;
+    margin: auto;
+}
+
+.intro h1 {
+    font-size: 60px;
+    font-weight: 200;
+    background: linear-gradient(to right, #494964, #6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: type 7s steps(15) infinite;
+    margin: auto;
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:3px solid #494964;
+    border-right-width: 2px;
+    line-height: 65px;
+}
+
+@keyframes type {
+    0% {
+      width:0ch;
+    }
+    30% {
+      width: 15ch;
+    }
+    80% {
+      width: 15ch;
+    }
+    100% {
+      width: 0ch;
+    }
+  }
 
 .intro p {
     margin-top: 5px;
@@ -68,59 +119,100 @@ nav {
     color: #585772;
 }
 
-.circle {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    z-index: -1;
-    width: 40%;
-    opacity: 0.6;
-}
-
 .circle-here{
     border:2px solid lightblue;
     border-radius:50%;
     background:rgba(0,0,0,0);
     background-color: lightblue;
-    width:500px;
-    height:500px;
+    width: 150px;
+    height: 150px;
     text-align:center;
-    line-height:100px;
-    top:-100px;
-    right:-100px;
     position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    z-index:-1;
 }
 
-.circle-orange{
+.myCircles {
+    display: inline-block;
+    align-items:block;
+}
+
+
+.circle-blue{
+    border:2px solid lightblue;
+    border-radius:50%;
+    background:rgba(0,0,0,0);
+    background-color: lightblue;
+    width: 500px;
+    height: 500px;
+    text-align:center;
+    position: absolute;
+    min-height:0vh;
+    margin-left: -900px;
+    margin-top: -700px;
+    z-index:-1;
+    opacity: 0.7;
+}
+
+.circle-red{
     border:2px solid lightcoral;
     border-radius:50%;
     background:rgba(0,0,0,0);
     background-color: lightcoral;
-    color:solid lightcoral;
-    width:500px;
-    height:500px;
+    width: 65vw;
+    height: 65vmin;
     text-align:center;
-    line-height:100px;
-    top:-300px;
-    right:1200px;
     position: absolute;
-    opacity: 0.6;
-    z-index: -1;
+    margin-left: 55vw;
+    margin-top: -90vmin;
+    z-index:-1;
+    opacity: 0.7;
 }
 
-.circle-gray{
-    border:2px solid lightgray;
-    border-radius:50%;
-    background:rgba(0,0,0,0);
-    color:white;
-    background-color: lightgray;
-    width:600px;
-    height:600px;
-    text-align:center;
-    line-height:100px;
-    top: 550px;
-    right:750px;
+ul {
+    list-style: none;
+    margin-top:2px;
+}
+
+.presentation li {
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 180%;
+}
+.presentation li a {
+    color: #585772;
+    transition: color 0.5s;
+}
+
+.intro a:hover > .fa-linkedin{
+    color:#0077b5;
+  }
+
+.intro a:hover > .fa-github{
+    color:#333333;
+}
+
+.intro a:hover > .fa-envelope{
+    color:#bd081c;
+}
+
+.big-circle {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+    opacity: 0.5;
+    height: 50vh;
+}
+
+section:before {
+    content: '';
     position: absolute;
-    opacity: 0.6;
-    z-index: -1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(lightgray, lightblue);
+    clip-path: polygon(100% 10%,0 100%, 100% 100%);
 }
