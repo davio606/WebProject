@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9426" height="4776" viewBox="0 0 9426 4776">
+  <defs>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="9426" height="4776"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <rect width="9426" height="4776" fill="#fff"/>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(7362 -738)" fill="#f08989" stroke="#707070" stroke-width="1">
+      <ellipse cx="1497" cy="1332" rx="1497" ry="1332" stroke="none"/>
+      <ellipse cx="1497" cy="1332" rx="1496.5" ry="1331.5" fill="none"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(-1632 -1428)" fill="#dff6ff" stroke="#707070" stroke-width="1">
+      <ellipse cx="1497" cy="1332" rx="1497" ry="1332" stroke="none"/>
+      <ellipse cx="1497" cy="1332" rx="1496.5" ry="1331.5" fill="none"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(1962 3840)" fill="#c8c8c8" stroke="#707070" stroke-width="1">
+      <ellipse cx="1497" cy="1332" rx="1497" ry="1332" stroke="none"/>
+      <ellipse cx="1497" cy="1332" rx="1496.5" ry="1331.5" fill="none"/>
+    </g>
+  </g>
+</svg>
