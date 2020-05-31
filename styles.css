@@ -30,6 +30,7 @@ header {
 
 .myLinks {
     text-decoration: none;
+    color: linear-gradient(to right, #494964, #6f6f89);
 }
 nav {
     flex: 0.2;
