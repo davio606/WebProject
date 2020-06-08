@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css"/>
-        <title>Home Page</title>
+        <title>David Yoon</title>
         <link
         href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
         rel="stylesheet"
@@ -13,11 +13,38 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .slantedDivA{
+                position: relative;
+                width: 100%;
+                height: auto;
+                background: rgba(40, 40, 40, 1);
+                box-sizing: border-box;
+                padding: 30px;
+                color: #fff;
+                margin-bottom: 200px;
+                }
+    
+            .slantedDivA:after{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                content: '';
+                background: inherit;
+                z-index: -1;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                transform-origin: top left;
+                transform: skewY(4deg);
+                }
+        </style>
     </head>
     <body>
         <header>
             <div class="logos">
-                <h4>By:David Yoon</h4>
+                <h4>Work in Progress</h4>
             </div>
             <nav>
                 <ul class = "nav-bar">
@@ -26,34 +53,30 @@
                     <li><a class = "myLinks" target = "_blank" href="David Yoon Resume.pdf">Resume</a></li>
                 </ul>
             </nav>
+            <div class = >
 
-            <div class=socials>
-                <a href="https://www.linkedin.com/in/david-j-yoon/" target="_blank" class="fa fa-linkedin"></a></li>
-                <a href="https://github.com/davio606" target="_blank" class="fa fa-github"></a>
-                <a href="mailto: djy6cg@virginia.edu" target="_blank" class="fa fa-envelope"></a>
             </div>
         </header>
-
         <main>
-            <section class="about-presentation">
-                <div class="about-intro">
-                    <h1>Hi, I'm David!</h1>
-                    <p>I love new things and I'm a dreamer. I enjoy meeting new people, solving new problems, and creating new challenges for myself. O </p>
+            <section class ="about-presentation">
+                <div class = "about-intro">
+                    <h1>Hello There 👋</h1>
+                    <p>
+                        I'm David. I'm fascinated by how technology can have the power to change lives, and am exploring ways to make a positive impact by creating new opportunities for and giving back to my communities. 
+                    </p>
+                    <br>
+                    <p>
+                        Currently, I'm a student at the University of Virginia studying Computer Science and Entrepreneurship. This summer, I'll be interning at <a href = "https://www.relativity.com/">Relativity</a> in Chicago, Illinois, where I'll be helping the team optimize their backend pipeline and execute their UI redesign plans.
+                    </p>
+                    <br>
+                    <p>
+                       Aside from all this, I am heavily invested in playing and watching soccer (grew up watching Manchester United), I love music and indulge heavily on Spotify for new content, and I am an advocate of 
+                    </p>
                 </div>
                 <div class = "about-img">
 
                 </div>
-                <!-- <img class ="circle" src ="./images/circle.png" alt =""/> -->
             </section>
-
-            <div class="circle-here">
-            </div>
-            <div class="circle-orange">
-            </div>
-            <div class="circle-gray">
-            </div>
-        </main>
-
-
+        </main> 
     </body>
 </html>
