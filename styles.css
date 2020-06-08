@@ -85,6 +85,7 @@ nav {
     font-size: 18px;
     color: #585772;
     flex: 1;
+    margin:auto;
 }
 
 .about-img {
@@ -102,6 +103,7 @@ nav {
 .about-intro p {
     font-weight: 200;
     font-size: 18px;
+    align-items: center;
     text-align: center;
     color: #585772;
 }
