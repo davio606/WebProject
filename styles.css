@@ -101,7 +101,7 @@ nav.fill ul li a:hover {
     flex: 1;
     min-height: 30vh;
     align-items: center;
-    display: inline-block;
+    display: block;
 }
 
 .about-img {
@@ -131,18 +131,20 @@ nav.fill ul li a:hover {
 .intro h1 {
     font-size: 60px;
     font-weight: 200;
+    color: #494964;
     background: linear-gradient(to right, #494964, #6f6f89);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /*-webkit-text-fill-color: transparent;
+    *
     animation: 
         type 5s steps(15) infinite,
-        blink-caret .75s step-end infinite;
+        blink-caret .75s step-end infinite;*/
     margin: auto;
     margin-top: 30px;
     overflow:hidden;
     white-space:nowrap;
-    border-right:3px solid #494964;
-    border-right-width: 2px;
+    /*border-right:3px solid #494964;
+    border-right-width: 2px;*/
     line-height: 65px;
 }
 
@@ -222,31 +224,45 @@ footer {
 .intro img {
     display: block;
     margin: 0 auto;
+    /*background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
     background-color: rgb(155, 202, 240);
+    background-repeat: no-repeat;
     /*background-color: white;*/
     padding: 8px;
 }
-.underline--magical {
-    background-image: linear-gradient(120deg, rgb(155, 202, 240), rgb(155, 202, 240));
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
-  }
 
-  .underline--magical:hover {
-    background-image: linear-gradient(120deg, rgb(155, 202, 240), rgb(155, 202, 240));
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
-    background-size: 100% 88%;
-  }
+#typed-strings {
+    display: none;
+}
 
-  .underline {
-    background-image: linear-gradient(120deg, rgb(155, 202, 240), rgb(155, 202, 240));
-    background-repeat: no-repeat;
-    background-size: 100% 0.1em;
-    background-position: 0 88%;
-    transition: background-size 0.25s ease-in;
-  }
+span#typed {
+    color: #585772;
+}
+
+.highlight.pink {
+    background: Orange;
+}
+
+.highlight.blue {
+    background: rgb(155, 202, 240);;
+}
+.highlight {
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    background: #111;
+}
+
+.row {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -.5rem;
+    margin-left: -.5rem;

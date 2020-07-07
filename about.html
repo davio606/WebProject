@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
         <title>David Yoon</title>
         <link
         href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
@@ -13,40 +14,13 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
         <!-- Add icon library -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            .slantedDivA{
-                position: relative;
-                width: 100%;
-                height: auto;
-                background: rgba(40, 40, 40, 1);
-                box-sizing: border-box;
-                padding: 30px;
-                color: #fff;
-                margin-bottom: 200px;
-                }
-    
-            .slantedDivA:after{
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                content: '';
-                background: inherit;
-                z-index: -1;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                transform-origin: top left;
-                transform: skewY(4deg);
-                }
-        </style>
     </head>
     <body>
         <header>
             <div class="logos">
-                <h4>dy.</h4>
+                <h3><a href="index.html">dy.</a></h3>
             </div>
-            <nav>
+            <nav class ="fill">
                 <ul class = "nav-bar">
                     <li><a class = "myLinks" href="index.html">Home</a></li>
                     <li><a class = "myLinks" href="about.html">About</a></li>
@@ -58,14 +32,20 @@
             </div>
         </header>
         <main>
-            <section class ="about-presentation">
-                <div class = "about-spacing"></div>
-                <div class = "about-intro">
-                    <h1>Hello There 👋</h1>
-                    <p>
+            <section class="presentation">
+                <div class="intro">
+                    <img class="profile-image big rounded" src="images/davio1.jpg" alt="profile image of Lucy">
+                    <h1>
+                        <span id="typed"></span>
+                        <div id="typed-strings" style="display: none;">
+		                    <p>Hi I'm <span class="highlight blue">David Yoon</span></p>
+		                    <p>Student at <span class="highlight pink">UVA</span> </p>
+                            <p>Software <span class="highlight blue">Developer</span> </p>
+		                </div>
+                      </h1>
+                      <p>
                         I'm David. I'm fascinated by how technology can have the power to change lives, and am exploring ways to make a positive impact by creating new opportunities for and giving back to my communities. 
                     </p>
-                    <br>
                     <p>
                         Currently, I'm a student at the <a href = "https://engineering.virginia.edu/departments/computer-science">University of Virginia</a> studying Computer Science and Entrepreneurship. This summer, I'll be interning at <a href = "https://www.relativity.com/">Relativity</a> in Chicago, Illinois, where I'll be helping the team optimize their backend pipeline and execute their UI redesign plans.
                     </p>
@@ -76,8 +56,8 @@
                     <br>
                     <p>
                         If you want to learn more, check out my <a href="David Yoon Resume.pdf"> resume</a>, or feel free to reach out! 
-                    </p>
-                </div>
+                    </p>           
+                </div>  
             </section>
         </main> 
     </body>

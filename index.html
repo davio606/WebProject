@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css"/>
+        <script src="script.js"></script>
         <title>David Yoon</title>
         <link
         href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
@@ -22,6 +23,7 @@
             <nav class ="fill">
                 <ul class = "nav-bar">
                     <li><a class = "myLinks" href="index.html">Home</a></li>
+                    <li><a class = "myLinks" href="about.html">About</a></li>
                     <li><a class = "myLinks" target = "_blank" href="David Yoon Resume.pdf">Resume</a></li>
                 </ul>
             </nav>
@@ -33,7 +35,14 @@
             <section class="presentation">
                 <div class="intro">
                     <img class="profile-image big rounded" src="images/davio1.jpg" alt="profile image of Lucy">
-                    <h1>Hi, I'm <span class="underline">David Yoon.</span></h1>
+                    <h1>
+                        <span id="typed"></span>
+                        <div id="typed-strings" style="display: none;">
+		                    <p>Hi I'm <span class="highlight blue">David Yoon</span></p>
+		                    <p>Student at <span class="highlight pink">UVA</span> </p>
+                            <p>Software <span class="highlight blue">Developer</span> </p>
+		                </div>
+                      </h1>
                     <p>I love new things and I'm a dreamer.</p>
                     <p>Currently, I am playing with the idea of "programming on the right side of the brain". </p>
                     <ul>
