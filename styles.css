@@ -7,6 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f6f6f8;
+    font-size: 16px;
     /*
     background-image: url(images/images3.jpg);
     background-size: cover;
@@ -42,13 +43,13 @@ header {
     margin: auto;
     justify-content: space-around;
     list-style: none;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 .myLinks {
     text-decoration: none;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 17px;
     color: #585772;
     opacity:1;
 }

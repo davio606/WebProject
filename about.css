@@ -1,4 +1,8 @@
-
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
     /* Typography Declaration */
     font-family: 'Poppins', sans-serif;
@@ -6,9 +10,11 @@ body {
     font-size: 16px;
     color: black;
     background-color: #f6f6f8;
-  }
+}
 
-  header {
+a { color: inherit; } 
+
+header {
     display: flex;
     width: 90%;
     margin: auto;
@@ -19,6 +25,10 @@ body {
 .logos {
     flex: 1;
 }
+
+.highlight {
+  background: linear-gradient(180deg,rgba(255,255,255,0) 65%,  #FFD0AE 65%);
+  }
 
 .logos a{
     color: black;
@@ -86,17 +96,17 @@ img {
   
   /* Text Declarations for Sections */
   
-  .introduction-section > p,
-  .location-section > p,
-  .content-footer > p,
-  .questions-section > p {
-    margin-top: 5px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    font-size: 18px;
-    color: rgb(128, 128, 128);
-    display: inline;
-  }
+.introduction-section > p,
+.location-section > p,
+.content-footer > p,
+.questions-section > p {
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: rgb(128, 128, 128);
+  display: inline;
+}
   
   /* Section Styling */
   
