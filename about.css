@@ -1,0 +1,153 @@
+
+body {
+    /* Typography Declaration */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: black;
+    background-color: #f6f6f8;
+  }
+
+  header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    height: 10vh;
+}
+
+.logos {
+    flex: 1;
+}
+
+.logos a{
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    list-style: none;
+    font-size: 17px;
+}
+
+.myLinks {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    opacity:1;
+}
+
+nav {
+    flex: 0.5;
+}
+
+.myLinks::after {
+    content:'';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(155, 202, 240);
+    transition: width .3s
+}
+
+
+.myLinks:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+nav.fill ul li a:hover {
+    color: rgb(155, 202, 240);
+    z-index: 1;
+    opacity: 1;
+    transition: width 1s;
+  }
+  
+  .content-footer {
+    text-align: center;
+  }
+  
+
+img {
+    max-width: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+.container {
+    flex:1;
+}
+
+.holder {  
+    align-items: center;
+}
+  
+  /* Text Declarations for Sections */
+  
+  .introduction-section > p,
+  .location-section > p,
+  .content-footer > p,
+  .questions-section > p {
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    color: rgb(128, 128, 128);
+    display: inline;
+  }
+  
+  /* Section Styling */
+  
+  .introduction-section,
+  .location-section,
+  .questions-section {
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+  }
+  
+  .questions-section > h2 {
+    /*Typography Declarations */
+    font-family: 'Poppins', sans-serif;
+    color: rgb(128, 128, 128);
+  }
+  
+  /* Footer Styling */
+  
+  .fa-stack fa-lg {
+    display: inline-block;
+  }
+  
+  .footer-container > p {
+    margin-top: 3em;
+  }
+  
+  .content-footer {
+    padding: 2em 0;
+    margin-top: 3em;
+  }
+
+  
+  
+  @media only screen and (max-width: 571px) {
+      .masthead {
+          padding: 5em 0;
+      }
+      .masthead-intro {
+          font-size: 3em;
+      }
+      .masthead-heading {
+          font-size: .5em;
+      }
+      .container {
+          padding: 0 3em;
+      }
+      .footer-container {
+          padding: 0 3em;
+    }
+  }
+  
+  

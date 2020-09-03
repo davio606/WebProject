@@ -47,7 +47,9 @@ header {
 
 .myLinks {
     text-decoration: none;
-    color: rgb(128, 128, 128);
+    font-weight: 200;
+    font-size: 18px;
+    color: #585772;
     opacity:1;
 }
 
@@ -89,40 +91,6 @@ nav.fill ul li a:hover {
     min-height: 70vh;
 }
 
-.about-presentation {
-    display:flex;
-    align-items: center;
-    min-height: 30vh;
-}
-.about-intro {
-    font-weight: 200;
-    font-size: 18px;
-    color: #585772;
-    flex: 1;
-    min-height: 30vh;
-    align-items: center;
-    display: block;
-}
-
-.about-img {
-    text-align: center;
-    flex:1;
-}
-
-.about-intro h1 {
-    font-size: 60px;
-    font-weight: 300;
-    color: #585772;
-    text-align: center;
-}
-
-.about-intro p {
-    font-weight: 300;
-    font-size: 15px;
-    text-justify: auto;
-    text-align: center;
-    color: #585772;
-}
 .intro {
     text-align: center;
     margin: auto;
@@ -266,3 +234,4 @@ span#typed {
     flex-wrap: wrap;
     margin-right: -.5rem;
     margin-left: -.5rem;
+}
