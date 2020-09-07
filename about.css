@@ -27,8 +27,18 @@ header {
 }
 
 .highlight {
-  background: linear-gradient(180deg,rgba(255,255,255,0) 65%,  #FFD0AE 65%);
-  }
+  font-weight: bolder;
+  background: linear-gradient(180deg,rgba(255,255,255,0) 65%,  #f8f8f8 65%);
+}
+
+.highlight a {
+  color: #f16a09;
+  background: none;
+}
+.highlight a:hover {
+  text-decoration: none;
+}
+
 
 .logos a{
     color: black;

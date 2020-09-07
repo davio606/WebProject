@@ -177,9 +177,6 @@ ul {
 .intro a:hover > .fa-envelope{
     color:#bd081c;
 }
-footer {
-    background: green;
-}
 
 .profile-image {
     max-height: 175px;
@@ -235,4 +232,49 @@ span#typed {
     flex-wrap: wrap;
     margin-right: -.5rem;
     margin-left: -.5rem;
+}
+
+/* Footer Styling */
+
+.fa-stack fa-lg {
+display: inline-block;
+}
+
+.footer-container > p {
+font-weight: 200;
+font-size: 16px;
+margin-top: 3em;
+align-items: center;
+}
+
+.content-footer {
+padding: 2em 0;
+margin-top: 3em;
+text-align: center;
+}
+.content-footer > p {
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: rgb(128, 128, 128);
+  display: inline;
+}
+
+@media only screen and (max-width: 571px) {
+    .masthead {
+        padding: 5em 0;
+    }
+    .masthead-intro {
+        font-size: 3em;
+    }
+    .masthead-heading {
+        font-size: .5em;
+    }
+    .container {
+        padding: 0 3em;
+    }
+    .footer-container {
+        padding: 0 3em;
+  }
 }
