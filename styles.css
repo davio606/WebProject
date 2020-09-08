@@ -178,6 +178,10 @@ ul {
     color:#bd081c;
 }
 
+.intro a:hover > .fa-medium{
+    color:	#14c867;
+}
+
 .profile-image {
     max-height: 175px;
        
