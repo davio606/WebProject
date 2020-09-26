@@ -29,7 +29,21 @@ header {
     height: 10vh;
 }
 
+.original {
+    animation: fadeInAnimation ease 5.5s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+.home-main {
+    animation: fadeImmediately ease 1s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
 .logos {
+    animation: fadeImmediately ease 1s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
     flex: 1;
 }
 
@@ -56,6 +70,9 @@ header {
 
 nav {
     flex: 0.5;
+    animation: fadeImmediately ease 1s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
 }
 
 .myLinks::after {
@@ -265,6 +282,43 @@ text-align: center;
   display: inline;
 }
 
+.before {
+    background-color: #f6f6f8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.before-text {
+    color: rgb(155, 202, 240);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.slider {
+    background-color: #eeeeee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+
+.hide {
+    background-color: #f6f6f8;
+    overflow: hidden;
+}
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
 @media only screen and (max-width: 571px) {
     .masthead {
         padding: 5em 0;
@@ -281,4 +335,26 @@ text-align: center;
     .footer-container {
         padding: 0 3em;
   }
+
 }
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    50% {
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+@keyframes fadeImmediately { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 

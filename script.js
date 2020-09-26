@@ -1,27 +1,31 @@
-(function () {
+(function() {
     'use strict';
-     
      // WAIT FOR ALL TO BE LOADED
      window.onload = function() {
-         
          // add loaded class to html
          var root = document.documentElement;
          root.className += ' loaded';
- 
-         // TYPING EFFECT
+         
          Typed.new('#typed', {
-             stringsElement: document.getElementById('typed-strings'),
-             loop: true,
-             typeSpeed: 5,
-             backSpeed: 2,
-             startDelay: 1000,
-             backDelay: 1200
-         });
+            stringsElement: document.getElementById('typed-strings'),
+            loop: true,
+            typeSpeed: 5,
+            backSpeed: 2,
+            startDelay: 1500,
+            backDelay: 1500
+        });
      }; // all loaded
      
        
  }());
- 
+
+ function wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+      end = new Date().getTime();
+   }
+ }
  
  
  /*

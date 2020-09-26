@@ -20,17 +20,35 @@
     <body>
         <header>
             <div class="logos">
-                <h3><a href="index.html">dy.</a></h3>
+                <h3><a href="home.html">dy.</a></h3>
             </div>
             <nav class ="fill">
                 <ul class = "nav-bar">
-                    <li><a class = "myLinks" href="index.html">Home</a></li>
+                    <li><a class = "myLinks" href="home.html">Home</a></li>
                     <li><a class = "myLinks" href="about.html">About Me</a></li>
                     <li><a class = "myLinks" target = "_blank" href="David Yoon Resume.pdf">Resume</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <div class = "before"> 
+            <div class ="before-text"> 
+                <h1 class = "hide"> 
+                    <span class = "text"> Welcome to my Website.</span>
+                </h1>
+                <h1 class = "hide"> 
+                    <span class = "text"> Enjoy your Stay!</span>
+                </h1>
+            </div>
+
+        </div>
+        <div class="slider"></div>
+        <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+        <script src="./app.js"></script>
+        <main class = "original">
             <section class="presentation">
                 <div class="intro">
                     <img class="profile-image big rounded" src="images/davio1.jpg" alt="profile image of David">
@@ -42,7 +60,7 @@
                             <p>Software <span class="highlight blue">Developer</span> </p>
 		                </div>
                       </h1>
-                    <p>I'm a dreamer and I love new things.</p>
+                    <p class = "fade-in">I'm a dreamer and I love new things.</p>
                     <p>Currently, I am playing with the idea of "programming on the right side of the brain". </p>
                     <ul>
                         <li><a href="https://www.linkedin.com/in/david-j-yoon/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
