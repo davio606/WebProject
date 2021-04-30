@@ -225,7 +225,11 @@ span#typed {
 }
 
 .highlight.blue {
-    background: rgb(155, 202, 240);;
+    background: rgb(155, 202, 240);
+}
+
+.highlight.appian {
+    background: rgb(38,33,247);
 }
 .highlight {
     display: inline-block;
