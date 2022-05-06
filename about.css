@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 body {
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1; 
@@ -25,24 +26,59 @@ header {
     height: 10vh;
 }
 
-.logos {
-    flex: 1;
+/* Picture*/
+
+.profile-image {
+  max-height: 500px;
 }
+
+.rounded {
+  border-radius: 50%;
+}
+
 
 .highlight {
   font-weight: bolder;
   background: linear-gradient(180deg,rgba(255,255,255,0) 65%,  #f8f8f8 65%);
 }
 
+.highlight h1:before {
+  content: '[';
+  color: rgb(155, 202, 240);
+  font-size: 24px;
+  text-align: right;
+  padding-right: 3px;
+}
+.highlight h1:after {
+  content: ']';
+  color: rgb(155, 202, 240);
+  font-size: 24px;
+  text-align: left;
+  padding-left: 3px;
+}
+
 .highlight a {
   color: #f16a09;
   background: none;
 }
+
+.highlight.appian a {
+  color: rgb(35, 34, 240);
+}
+.highlight.relativity a {
+  color: rgb(248, 152, 29);
+}
+.highlight.alarm a {
+  color: rgb(242,106,33);
+}
+
 .highlight a:hover {
   text-decoration: none;
 }
 
-
+.logos {
+  flex: 1;
+}
 .logos a{
     color: black;
     text-decoration: none;
@@ -100,11 +136,20 @@ img {
     margin-top: 2em;
 }
 .container {
-    flex:1;
+  padding-left: 40px;
 }
 
-.holder {  
-    align-items: center;
+.img-container img{
+  display: block;
+  margin: 0 auto;
+  /*background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
+  background-color: rgb(155, 202, 240);
+  background-repeat: no-repeat;
+  padding: 8px;
+}
+
+.holder { 
+  align-items: center;
 }
   
   /* Text Declarations for Sections */
@@ -126,16 +171,11 @@ img {
   .introduction-section,
   .location-section,
   .questions-section {
-    max-width: 38em;
+    display: flex;
+    max-width: 50em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
-  }
-  
-  .questions-section > h2 {
-    /*Typography Declarations */
-    font-family: 'Poppins', sans-serif;
-    color: rgb(128, 128, 128);
   }
   
   /* Footer Styling */
