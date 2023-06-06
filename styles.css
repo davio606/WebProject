@@ -273,6 +273,11 @@ span#typed {
 .highlight.appian {
     background: rgb(38,33,247);
 }
+
+.highlight.fanatics {
+    background: #E53D2E
+}
+
 .highlight {
     display: inline-block;
     padding: 0 10px;
