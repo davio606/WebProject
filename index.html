@@ -1,82 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css"/>
-        <link rel="icon" href="images/davio1.jpg">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <script src="script.js"></script>
-        <title>David Yoon</title>
-        <link
-        href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
-        rel="stylesheet"
-        />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-        <!-- Add icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <header>
-            <div class="logos">
-                <h3><a href="home.html">dy.</a></h3>
-            </div>
-            <nav class ="fill">
-                <ul class = "nav-bar">
-                    <li><a class = "myLinks" href="home.html">Home</a></li>
-                    <li><a class = "myLinks" href="about.html">About Me</a></li>
-                    <li><a class = "myLinks" target = "_blank" href="David Yoon Resume.pdf">Resume</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class = "before"> 
-            <div class ="before-text"> 
-                <h1 class = "hide"> 
-                    <span class = "text"> Welcome to my Website.</span>
-                </h1>
-                <h1 class = "hide"> 
-                    <span class = "text"> Enjoy your Stay!</span>
-                </h1>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>david yoon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&display=swap" rel="stylesheet" />
 
-        </div>
-        <div class="slider"></div>
-        <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
-      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
-      crossorigin="anonymous"
-    ></script>
-        <script src="./app.js"></script>
-        <main class = "original">
-            <section class="presentation">
-                <div class="intro">
-                    <img class="profile-image big rounded" src="images/davio1.jpg" alt="profile image of David">
-                    <h1>
-                        <span id="typed"></span>
-                        <div id="typed-strings" style="display: none;">
-		                    <p>Hi I'm <span class="highlight blue">David Yoon</span></p>
-		                    <p>Previously @ <span class="highlight pink">UVA</span> </p>
-                            	    <p>Developer @ <span class="highlight appian">Appian</span> </p>
-		                </div>
-                      </h1>
-                    <p class = "fade-in">I'm a dreamer and I love new things.</p>
-                    <p>Currently, I am exploring machine learning land and developing on the full stack. </p>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/in/david-j-yoon/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="https://github.com/davio606" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                        <li><a href="https://medium.com/@davidyoon70" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
-                        <li><a href="mailto: djy6cg@virginia.edu" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+  <style>
+    :root {
+      --bg: #0a0a09;
+      --fg: #d4cfc8;
+      --dim: #5a564f;
+      --accent: #c9a96e;
+      --red: #c97a6e;
+      --green: #a394c7;
+      --link: #a89070;
+      --font-mono: 'DM Mono', monospace;
+      --font-serif: 'Fraunces', serif;
+    }
 
-                    </ul>               
-                </div>  
-            </section>
-            <footer class="content-footer">
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-                <div class="footer-container">
-                  <p>&copy; 2020 <a href="https://davidjyoon.me">David Yoon</a>. Thanks for visiting!</p>
-                </div>
-            </footer>fa 
-        </main> 
-    </body>
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-mono);
+      font-size: 15px;
+      line-height: 1.5;
+      min-height: 100vh;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    /* Noise texture overlay */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1000;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 200px 200px;
+    }
+
+    /* ─── LAYOUT ─── */
+    .container {
+      max-width: 680px;
+      margin: 0 0 0 clamp(40px, 10vw, 160px);
+      padding: 80px 24px 72px;
+    }
+
+    /* ─── NAV / SOCIAL ─── */
+    .socials {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 40px;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards;
+    }
+
+    .socials a {
+      color: var(--dim);
+      text-decoration: none;
+      font-size: 12.5px;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+
+    .socials a:hover { color: var(--accent); }
+
+    /* ─── HEADER ─── */
+    .site-title {
+      font-family: var(--font-serif);
+      font-size: clamp(3.2rem, 7vw, 5.5rem);
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      color: var(--fg);
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeUp 0.6s 0.1s ease forwards;
+    }
+
+    .site-title a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-title a:hover { color: var(--accent); }
+
+    /* ─── SECTION INTRO ─── */
+    .section-intro {
+      font-family: var(--font-serif);
+      font-style: normal;
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: #7a4a44;
+      margin-bottom: 16px;
+      padding-left: 2px;
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards;
+    }
+
+    /* ─── TIMELINE ENTRIES ─── */
+    .timeline {
+      margin-bottom: 32px;
+    }
+
+    .entry {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 0 20px;
+      padding: 3px 0;
+      border-top: 1px solid transparent;
+      transition: border-color 0.2s;
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    .entry:hover { border-color: #1e1d1a; }
+
+    .entry-date {
+      color: var(--accent); /* bolder, higher-contrast default */
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      padding-top: 2px;
+      white-space: nowrap;
+      user-select: none;
+    }
+
+    .entry-text {
+      color: var(--fg);
+      font-size: 16px;
+    }
+
+    .entry-text a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .entry-text a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    /* Section color theming */
+    .section-failures .section-intro { color: #8a4a44; }
+    .section-failures .entry-date { color: #e28b7b; } /* bolder red tone */
+    .section-failures .entry:hover { border-color: #2a1a18; }
+
+    .section-tries .section-intro { color: #a08a4a; }
+
+
+
+
+    /* Not-work section: single-column text entries (no date column needed) */
+    .section-tries .entry {
+      grid-template-columns: 1fr;
+    }
+
+    .section-tries .entry-date {
+      display: none;
+    }
+
+    .section-wins .section-intro { color: #4e4a6e; }
+    .section-wins .entry { grid-template-columns: 1fr; }
+    .section-wins .entry-date { color: var(--fg); }
+    .section-wins .entry:hover { border-color: #1e1a2a; }
+
+    /* ─── DIVIDER ─── */
+    .divider {
+      width: 100%;
+      height: 1px;
+      background: #1e1d1a;
+      margin: 20px 0;
+    }
+
+    /* ─── FOOTER / SNAPSHOT ─── */
+    .snapshot {
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    .snapshot-date {
+      font-size: 12.5px;
+      color: var(--dim);
+      margin-bottom: 12px;
+      letter-spacing: 0.04em;
+    }
+
+    .snapshot-items {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .snapshot-items span {
+      font-size: 13.5px;
+      color: #4a4640;
+    }
+
+    .footer-bar {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12.5px;
+      color: #2e2c29;
+      border-top: 1px solid #161512;
+      padding-top: 12px;
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    .footer-bar a {
+      color: #3a3830;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-bar a:hover { color: var(--dim); }
+
+    /* ─── CLOSING QUOTE ─── */
+    .closing-quote {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--dim);
+      margin-bottom: 24px;
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Stagger entries via JS */
+    .entry { animation-delay: calc(var(--i, 0) * 35ms); }
+
+    @media (max-width: 480px) {
+      .container { padding: 48px 20px 80px; }
+      .entry { grid-template-columns: 70px 1fr; }
+      .site-title { font-size: 2.3rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+
+  <!-- Title -->
+  <h1 class="site-title">david yoon.</h1>
+
+  <!-- ── WORK ── -->
+  <section class="timeline section-failures">
+    <p class="section-intro" style="animation-delay:0.15s">work</p>
+
+    <div class="entry" data-i="1">
+      <span class="entry-date">currently</span>
+      <span class="entry-text">performance marketing &amp; netflix house @ <a href="https://www.netflix.com/house" target="_blank" style="color:#F44336;text-decoration:underline;text-underline-offset:3px;">netflix<span style="font-size:1.3em;line-height:1">↗</span></a></span>
+    </div>
+    <div class="entry" data-i="2">
+      <span class="entry-date">before</span>
+      <span class="entry-text">helped <a href="https://betfanatics.com/" target="_blank" style="color:#4A90E2;text-decoration:underline;text-underline-offset:3px;">fanatics<span style="font-size:1.3em;line-height:1">↗</span></a> launch the fastest growing sportsbook</span>
+    </div>
+    <div class="entry" data-i="3">
+      <span class="entry-date">earlier</span>
+      <span class="entry-text">appian, relativity, uva, etc</span>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── TRIES ── -->
+  <section class="timeline section-tries">
+    <p class="section-intro" style="animation-delay:0.2s">not work</p>
+
+    <div class="entry" data-i="5">
+      <span class="entry-text">playing soccer, making coffee, marathon training, trying games</span>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── WINS ── -->
+  <section class="timeline section-wins">
+    <p class="section-intro" style="animation-delay:0.25s">contact</p>
+
+    <div class="entry" data-i="12">
+      <span class="entry-text">davidjyoon7@gmail.com, <a href="https://www.linkedin.com/in/david-j-yoon/" target="_blank" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">linkedin<span style="font-size:1.3em;line-height:1">↗</span></a></span>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer-bar" style="animation-delay:0.4s">
+    <span>© 2026 david yoon</span>
+  </footer>
+
+</div>
+
+<script>
+  // Stagger animation delays on entries
+  document.querySelectorAll('.entry').forEach((el, i) => {
+    const base = 200;
+    el.style.animationDelay = `${base + i * 40}ms`;
+  });
+
+  // Subtle parallax on title
+  const title = document.querySelector('.site-title');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    title.style.transform = `translateY(${y * 0.04}px)`;
+  }, { passive: true });
+</script>
+</body>
 </html>
